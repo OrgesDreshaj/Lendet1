@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  cacttus-core-db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=lenda
+      - POSTGRES_PASSWORD=lenda
+      - POSTGRES_DB=lendaDB
+    ports:
+      - '5432:5432'
